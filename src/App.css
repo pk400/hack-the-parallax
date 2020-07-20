@@ -1,5 +1,12 @@
 .levels, .levels img {
   width: 500px;
+  text-align: center;
+}
+
+.description {
+  margin: 5em;
+  font-size: 3em;
+  text-transform: capitalize;
 }
 
 .input-row {
@@ -7,6 +14,7 @@
 }
 
 body {
+  background-image: url('./bg.jpg');
   overflow: hidden;
   margin: 0;
   padding: 0;

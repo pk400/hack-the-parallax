@@ -22,13 +22,19 @@ class App extends Component {
       .then(response => {
         const data = response.data.weather[0]
         const weatherImage = (
-          <img alt="weather" src={`http://openweathermap.org/img/wn/${data.icon}@2x.png`} />)
+          <img
+            alt="weather"
+            src={`http://openweathermap.org/img/wn/${data.icon}@2x.png`} />)
         this.setState({
           levels: [
             <div key={1} data-depth='0.5' className="levels">
               {weatherImage}
             </div>,
-            <div key={2} data-depth='0.5'>
+            <div
+              key={1}
+              data-depth='0.8'
+              className="description font-bold text-gray-900">
+              {data.description}
             </div>
           ]
         })
@@ -57,7 +63,8 @@ class App extends Component {
           {this.state.levels}
         </div>
         <div className="flex items-center z-40 fixed top-0 right-0 input-row">
-          <label className="flex-initial mr-3 font-bold" htmlFor="location">
+          <label className="flex-initial mr-3 font-bold text-gray-900"
+            htmlFor="location">
             What's the weather like in
           </label>
           <form onSubmit={event => {
