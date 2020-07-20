@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import './App.css'
-import bgImage from './bg.jpg'
 
 import axios from 'axios';
 import Parallax from 'parallax-js';
@@ -23,7 +22,7 @@ class App extends Component {
       .then(response => {
         const data = response.data.weather[0]
         const weatherImage = (
-          <img src={`http://openweathermap.org/img/wn/${data.icon}@2x.png`} />)
+          <img alt="weather" src={`http://openweathermap.org/img/wn/${data.icon}@2x.png`} />)
         this.setState({
           levels: [
             <div key={1} data-depth='0.5' className="levels">
