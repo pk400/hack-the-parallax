@@ -85,7 +85,7 @@ class App extends Component {
             <input
               type="submit"
               value="Check"
-              className="flex-initial ml-3 px-3 py-2 rounded" />
+              className="flex-initial ml-3 px-3 py-2 rounded font-bold input-button shadow" />
           </form>
         </div>
       </div>

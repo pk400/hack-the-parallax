@@ -26,3 +26,7 @@ body {
   background-position: 50%;
   height: 100vh;
 }
+
+.input-button:hover {
+  background-color: #cecece;
+}
